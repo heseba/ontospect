@@ -1,0 +1,1233 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE And SYSTEM "http://www.ruleml.org/fol/fol-monolith.dtd">
+<And innerclose="universal">
+
+<!-- rdfs2 -->
+
+<Implies>
+ <body>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>s</Var>
+    <Ind>rdfs:domain</Ind>
+    <Var>o</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Var>s</Var>
+    <Var>y</Var>
+   </Atom>   
+  </And>
+ </body>
+ <head>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>x</Var>
+   <Ind>rdf:type</Ind>
+   <Var>o</Var>
+  </Atom>
+ </head> 
+</Implies>
+
+<!-- rdfs3 -->
+
+<Implies>
+ <body>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>s</Var>
+    <Ind>rdfs:range</Ind>
+    <Var>o</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Var>s</Var>
+    <Var>y</Var>
+   </Atom>   
+  </And>
+ </body>
+ <head>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>y</Var>
+   <Ind>rdf:type</Ind>
+   <Var>o</Var>
+  </Atom>
+ </head> 
+</Implies>
+
+<!-- rdfs7 -->
+
+<Implies>
+ <body>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>s</Var>
+    <Ind>rdfs:subPropertyOf</Ind>
+    <Var>o</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Var>s</Var>
+    <Var>y</Var>
+   </Atom>   
+  </And>
+ </body>
+ <head>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>x</Var>
+   <Var>o</Var>
+   <Var>y</Var>
+  </Atom>
+ </head> 
+</Implies>
+
+<!-- rdfs9 -->
+
+<Implies>
+ <body>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>s</Var>
+    <Ind>rdfs:subClassOf</Ind>
+    <Var>o</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>rdf:type</Ind>
+    <Var>s</Var>
+   </Atom>   
+  </And>
+ </body>
+ <head>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>x</Var>
+   <Ind>rdf:type</Ind>
+   <Var>o</Var>
+  </Atom>
+ </head> 
+</Implies>
+
+<!-- owl14 is the same as rdfs9 -->
+<!-- owl15 is the same as rdfs7 -->
+<!-- owl16 is the same as rdfs2 -->
+<!-- owl17 is the same as rdfs3 -->
+
+<!-- owl10b -->
+
+<Implies>
+ <body>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>s</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:FunctionalProperty</Ind>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Var>s</Var>
+    <Var>y1</Var>
+   </Atom>   
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Var>s</Var>
+    <Var>y2</Var>
+   </Atom>      
+  </And>
+ </body>
+ <head>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>y1</Var>
+   <Ind>owl:sameAs</Ind>
+   <Var>y2</Var>
+  </Atom>
+ </head> 
+</Implies>
+
+<!-- owl11b -->
+
+<Implies>
+ <body>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>s</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:InverseFunctionalProperty</Ind>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x1</Var>
+    <Var>s</Var>
+    <Var>y</Var>
+   </Atom>   
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x2</Var>
+    <Var>s</Var>
+    <Var>y</Var>
+   </Atom>      
+  </And>
+ </body>
+ <head>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>x1</Var>
+   <Ind>owl:sameAs</Ind>
+   <Var>x2</Var>
+  </Atom>
+ </head> 
+</Implies>
+
+<!-- owl12b -->
+
+<Implies>
+ <body>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>s</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:SymmetricProperty</Ind>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Var>s</Var>
+    <Var>y</Var>
+   </Atom>   
+  </And>
+ </body>
+ <head>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>y</Var>
+   <Var>s</Var>
+   <Var>x</Var>
+  </Atom>
+ </head> 
+</Implies>
+
+<!-- owl13b -->
+
+<Implies>
+ <body>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>s</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:TransitiveProperty</Ind>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Var>s</Var>
+    <Var>y</Var>
+   </Atom>   
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>y</Var>
+    <Var>s</Var>
+    <Var>z</Var>
+   </Atom>   
+  </And>
+ </body>
+ <head>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>x</Var>
+   <Var>s</Var>
+   <Var>z</Var>
+  </Atom>
+ </head> 
+</Implies>
+
+<!-- owl18b -->
+
+<Implies>
+ <body>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>s</Var>
+   <Ind>owl:equivalentClass</Ind>
+   <Var>o</Var>
+  </Atom>
+ </body>
+ <head>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>s</Var>
+    <Ind>rdfs:subClassOf</Ind>
+    <Var>o</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>o</Var>
+    <Ind>rdfs:subClassOf</Ind>
+    <Var>s</Var>
+   </Atom>
+  </And>
+ </head>
+</Implies>
+
+<!-- owl19b -->
+
+<Implies>
+ <body>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>s</Var>
+    <Ind>owl:disjointWith</Ind>
+    <Var>o</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>rdf:type</Ind>
+    <Var>s</Var>
+   </Atom>   
+  </And>
+ </body>
+ <head>
+  <Neg>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>rdf:type</Ind>
+    <Var>o</Var>
+   </Atom>
+  </Neg>
+ </head>
+</Implies>
+
+<!-- owl20b -->
+
+<Implies>
+ <body>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>s</Var>
+   <Ind>owl:equivalentProperty</Ind>
+   <Var>o</Var>
+  </Atom>
+ </body>
+ <head>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>s</Var>
+    <Ind>rdfs:subPropertyOf</Ind>
+    <Var>o</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>o</Var>
+    <Ind>rdfs:subPropertyOf</Ind>
+    <Var>s</Var>
+   </Atom>
+  </And>
+ </head>
+</Implies>
+
+<!-- owl21b -->
+
+<Implies>
+ <body>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>s</Var>
+   <Ind>owl:inverseOf</Ind>
+   <Var>o</Var>
+  </Atom>
+ </body>
+ <head>
+  <And>
+   <Implies>
+    <body>
+     <Atom>
+      <Rel>statement</Rel>
+      <Var>x</Var>
+      <Var>s</Var>
+      <Var>y</Var>
+     </Atom>
+    </body>
+    <head>
+     <Atom>
+      <Rel>statement</Rel>
+      <Var>y</Var>
+      <Var>o</Var>
+      <Var>x</Var>
+     </Atom>
+    </head>
+   </Implies>    
+   <Implies>
+    <body>
+     <Atom>
+      <Rel>statement</Rel>
+      <Var>x</Var>
+      <Var>o</Var>
+      <Var>y</Var>
+     </Atom>
+    </body>
+    <head>
+     <Atom>
+      <Rel>statement</Rel>
+      <Var>y</Var>
+      <Var>s</Var>
+      <Var>x</Var>
+     </Atom>
+    </head>
+   </Implies>    
+  </And>
+ </head>
+</Implies>
+
+<!-- owl22b -->
+
+<Implies>
+ <body>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>s</Var>
+   <Ind>owl:sameAs</Ind>
+   <Var>o</Var>
+  </Atom>
+ </body>
+ <head>
+  <Atom>
+   <Cterm>
+    <Ctor>sameas</Ctor>
+    <Var>s</Var>
+    <Var>o</Var> 
+   </Cterm>
+  </Atom>
+ </head>
+</Implies>
+
+<!-- owl23b -->
+
+<Implies>
+ <body>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>s</Var>
+   <Ind>owl:differentFrom</Ind>
+   <Var>o</Var>
+  </Atom>
+ </body>
+ <head>
+  <Atom>
+   <Cterm>
+    <Ctor>differentfrom</Ctor>
+    <Var>s</Var>
+    <Var>o</Var> 
+   </Cterm>
+  </Atom>
+ </head>
+</Implies>
+
+<!-- owl24b -->
+
+<!-- Fact of subProperty as owl19b
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:complementOf</Ind>
+   <Ind>rdfs:subPropertyOf</Ind>
+   <Ind>owl:disjointWith</Ind>
+ </Atom>
+-->
+
+<Implies>
+ <body>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>s</Var>
+    <Ind>owl:complementOf</Ind>
+    <Var>o</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>rdf:type</Ind>
+    <Var>s</Var>
+   </Atom>   
+  </And>
+ </body>
+ <head>
+  <Neg>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>rdf:type</Ind>
+    <Var>o</Var>
+   </Atom>
+  </Neg>
+ </head>
+</Implies>
+ 
+<!-- owl24c -->
+
+<Implies>
+ <body>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>s</Var>
+    <Ind>owl:complementOf</Ind>
+    <Var>o</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Thing</Ind>
+   </Atom>
+   <Naf>
+    <Atom>
+     <Rel>statement</Rel>
+     <Var>x</Var>
+     <Ind>rdf:type</Ind>
+     <Var>s</Var>
+    </Atom>
+   </Naf>
+  </And>
+ </body>
+ <head>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>x</Var>
+   <Ind>rdf:type</Ind>
+   <Var>o</Var>
+  </Atom>
+ </head>
+</Implies>
+
+<!-- owl25b -->
+
+<Implies>
+ <body>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>s</Var>
+   <Ind>owl:unionOf</Ind>
+   <Var>o</Var>
+  </Atom>
+ </body>
+ <head>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>o</Var>
+   <Ind>rdfs:subClassOf</Ind>
+   <Var>s</Var>
+  </Atom>
+ </head>
+</Implies>
+
+<!-- owl25c -->
+
+<Implies>
+ <body>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>s</Var>
+    <Ind>owl:unionOf</Ind>
+    <Var>o</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>rdf:type</Ind>
+    <Var>s</Var>
+   </Atom>
+  </And>
+ </body>
+ <head>
+  <Exists>
+   <Var>y</Var>
+   <And>
+    <Atom>
+     <Rel>statement</Rel>
+     <Var>s</Var>
+     <Ind>owl:unionOf</Ind>
+     <Var>y</Var>
+    </Atom>
+    <Atom>
+     <Rel>statement</Rel>
+     <Var>x</Var>
+     <Ind>rdf:type</Ind>
+     <Var>y</Var>
+    </Atom>    
+   </And>
+  </Exists>
+ </head>
+</Implies>
+
+<!-- owl26b -->
+
+<Implies>
+ <body>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>s</Var>
+   <Ind>owl:intersectionOf</Ind>
+   <Var>o</Var>
+  </Atom>
+ </body>
+ <head>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>s</Var>
+   <Ind>rdfs:subClassOf</Ind>
+   <Var>o</Var>
+  </Atom>
+ </head>
+</Implies>
+
+<!-- owl26c -->
+
+<Implies>
+ <body>
+  <Forall>
+   <Var>y</Var>
+   <Implies>
+    <body>
+     <Atom>
+      <Rel>statement</Rel>
+      <Var>s</Var>
+      <Ind>owl:intersectionOf</Ind>
+      <Var>y</Var>
+     </Atom>
+    </body>
+    <head>
+     <Atom>
+      <Rel>statement</Rel>
+      <Var>x</Var>
+      <Ind>rdf:type</Ind>
+      <Var>y</Var>
+     </Atom>    
+    </head>
+   </Implies>
+  </Forall>
+ </body>
+ <head>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>x</Var>
+   <Ind>rdf:type</Ind>
+   <Var>s</Var>
+  </Atom>
+ </head> 
+</Implies>
+
+<!-- owl27b -->
+
+<Implies>
+ <body>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>s</Var>
+   <Ind>owl:oneOf</Ind>
+   <Var>o</Var>
+  </Atom>
+ </body>
+ <head>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>o</Var>
+   <Ind>rdf:type</Ind>
+   <Var>s</Var>
+  </Atom>
+ </head>
+</Implies>
+
+<!-- owl27c -->
+
+<Implies>
+ <body>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>s</Var>
+    <Ind>owl:oneOf</Ind>
+    <Var>o</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>rdf:type</Ind>
+    <Var>s</Var>
+   </Atom>
+  </And>
+ </body>
+ <head>
+  <Exists>
+   <Var>y</Var>
+   <And>
+    <Atom>
+     <Rel>statement</Rel>
+     <Var>s</Var>
+     <Ind>owl:oneOf</Ind>
+     <Var>y</Var>
+    </Atom>
+    <Atom>
+     <Cterm>
+      <Ctor>sameas</Ctor>
+      <Var>s</Var> 
+      <Var>o</Var> 
+     </Cterm>
+    </Atom>  
+   </And>
+  </Exists>
+ </head>
+</Implies>
+
+<!-- owl28b -->
+
+<Implies>
+ <body>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>s</Var>
+    <Ind>owl:allValuesFrom</Ind>
+    <Var>o</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>s</Var>
+    <Ind>owl:onProperty</Ind>
+    <Var>p</Var>
+   </Atom>
+   <Forall>
+    <Var>y</Var>
+    <Implies>
+     <body>
+      <Atom>
+       <Rel>statement</Rel>
+       <Var>x</Var>
+       <Var>p</Var>
+       <Var>y</Var>
+      </Atom>
+     </body>
+     <head>
+      <Atom>
+       <Rel>statement</Rel>
+       <Var>y</Var>
+       <Ind>rdf:type</Ind>
+       <Var>o</Var>
+      </Atom>    
+     </head>
+    </Implies>
+   </Forall>
+  </And>
+ </body>
+ <head>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>x</Var>
+   <Ind>rdf:type</Ind>
+   <Var>s</Var>
+  </Atom>   
+ </head>
+</Implies>
+
+<!-- owl28c -->
+
+<Implies>
+ <body>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>s</Var>
+    <Ind>owl:allValuesFrom</Ind>
+    <Var>o</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>s</Var>
+    <Ind>owl:onProperty</Ind>
+    <Var>p</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>rdf:type</Ind>
+    <Var>s</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Var>p</Var>
+    <Var>y</Var>
+   </Atom>   
+  </And>
+ </body>
+ <head>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>y</Var>
+   <Ind>rdf:type</Ind>
+   <Var>o</Var>
+  </Atom>   
+ </head>
+</Implies>
+
+<!-- owl29b -->
+
+<Implies>
+ <body>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>s</Var>
+    <Ind>owl:someValuesFrom</Ind>
+    <Var>o</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>s</Var>
+    <Ind>owl:onProperty</Ind>
+    <Var>p</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Var>p</Var>
+    <Var>y</Var>
+   </Atom>  
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>y</Var>
+    <Ind>rdf:type</Ind>
+    <Var>o</Var>
+   </Atom> 
+  </And>
+ </body>
+ <head>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>x</Var>
+   <Ind>rdf:type</Ind>
+   <Var>s</Var>
+  </Atom>   
+ </head>
+</Implies>
+
+<!-- owl29c -->
+
+<Implies>
+ <body>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>s</Var>
+    <Ind>owl:someValuesFrom</Ind>
+    <Var>o</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>s</Var>
+    <Ind>owl:onProperty</Ind>
+    <Var>p</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>rdf:type</Ind>
+    <Var>s</Var>
+   </Atom>    
+  </And>
+ </body>
+ <head>
+  <Exists>
+   <Var>y</Var>
+   <And>
+    <Atom>
+     <Rel>statement</Rel>
+     <Var>x</Var>
+     <Var>p</Var>
+     <Var>y</Var>
+    </Atom>  
+    <Atom>
+     <Rel>statement</Rel>
+     <Var>y</Var>
+     <Ind>rdf:type</Ind>
+     <Var>o</Var>
+    </Atom>    
+   </And>
+  </Exists> 
+ </head>
+</Implies>
+
+<!-- owl30b -->
+
+<Implies>
+ <body>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>owl:hasValue</Ind>
+    <Var>y</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>owl:onProperty</Ind>
+    <Var>p</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>u</Var>
+    <Ind>rdf:type</Ind>
+    <Var>x</Var>
+   </Atom>       
+  </And>
+ </body>
+ <head>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>u</Var>
+   <Var>p</Var>
+   <Var>y</Var>
+  </Atom>   
+ </head>
+</Implies>
+
+<!-- owl30c -->
+
+<Implies>
+ <body>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>owl:hasValue</Ind>
+    <Var>y</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>owl:onProperty</Ind>
+    <Var>p</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>u</Var>
+    <Var>p</Var>
+    <Var>y</Var>
+   </Atom>       
+  </And>
+ </body>
+ <head>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>u</Var>
+   <Ind>rdf:type</Ind>
+   <Var>x</Var>
+  </Atom>   
+ </head>
+</Implies>
+
+<!-- owl31b -->
+
+<Implies>
+ <body>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>owl:minCardinality</Ind>
+    <Var>y</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>owl:onProperty</Ind>
+    <Var>p</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>u</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Thing</Ind>
+   </Atom>
+   <Atom>
+    <Cterm>
+     <Ctor>swrlb:greaterThanOrEqual</Ctor>
+     <Cterm>
+      <Ctor>count</Ctor>
+      <Atom>
+       <Rel>statement</Rel>
+       <Var>u</Var>
+       <Var>p</Var>
+       <Var>v</Var>
+      </Atom>      
+     </Cterm>
+     <Var>y</Var>
+    </Cterm>       
+   </Atom>           
+  </And>
+ </body>
+ <head>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>u</Var>
+   <Ind>rdf:type</Ind>
+   <Var>x</Var>
+  </Atom>   
+ </head>
+</Implies>
+
+<!-- owl31c -->
+
+<Implies>
+ <body>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>owl:minCardinality</Ind>
+    <Var>y</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>owl:onProperty</Ind>
+    <Var>p</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>u</Var>
+    <Ind>rdf:type</Ind>
+    <Var>x</Var>
+   </Atom>  
+  </And>
+ </body>
+ <head>
+  <Atom>
+   <Cterm>
+    <Ctor>swrlb:greaterThanOrEqual</Ctor>
+    <Cterm>
+     <Ctor>count</Ctor>
+     <Atom>
+      <Rel>statement</Rel>
+      <Var>u</Var>
+      <Var>p</Var>
+      <Var>v</Var>
+     </Atom>      
+    </Cterm>
+    <Var>y</Var>
+   </Cterm>       
+  </Atom> 
+ </head>
+</Implies>
+
+<!-- owl32b -->
+
+<Implies>
+ <body>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>owl:maxCardinality</Ind>
+    <Var>y</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>owl:onProperty</Ind>
+    <Var>p</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>u</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Thing</Ind>
+   </Atom>  
+   <Atom>
+    <Cterm>
+     <Ctor>swrlb:lessThanOrEqual</Ctor>
+     <Cterm>
+      <Ctor>count</Ctor>
+      <Atom>
+       <Rel>statement</Rel>
+       <Var>u</Var>
+       <Var>p</Var>
+       <Var>v</Var>
+      </Atom>      
+     </Cterm>
+     <Var>y</Var>
+    </Cterm>       
+   </Atom>           
+  </And>
+ </body>
+ <head>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>u</Var>
+   <Ind>rdf:type</Ind>
+   <Var>x</Var>
+  </Atom>   
+ </head>
+</Implies>
+
+<!-- owl32c -->
+
+<Implies>
+ <body>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>owl:maxCardinality</Ind>
+    <Var>y</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>owl:onProperty</Ind>
+    <Var>p</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>u</Var>
+    <Ind>rdf:type</Ind>
+    <Var>x</Var>
+   </Atom>  
+  </And>
+ </body>
+ <head>
+  <Atom>
+   <Cterm>
+    <Ctor>swrlb:lessThanOrEqual</Ctor>
+    <Cterm>
+     <Ctor>count</Ctor>
+     <Atom>
+      <Rel>statement</Rel>
+      <Var>u</Var>
+      <Var>p</Var>
+      <Var>v</Var>
+     </Atom>      
+    </Cterm>
+    <Var>y</Var>
+   </Cterm>       
+  </Atom>
+ </head>
+</Implies>
+
+<!-- owl33b -->
+
+<Implies>
+ <body>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>owl:cardinality</Ind>
+    <Var>y</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>owl:onProperty</Ind>
+    <Var>p</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>u</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Thing</Ind>
+   </Atom>  
+   <Atom>
+    <Cterm>
+     <Ctor>swrlb:equal</Ctor>
+     <Cterm>
+      <Ctor>count</Ctor>
+      <Atom>
+       <Rel>statement</Rel>
+       <Var>u</Var>
+       <Var>p</Var>
+       <Var>v</Var>
+      </Atom>      
+     </Cterm>
+     <Var>y</Var>
+    </Cterm>       
+   </Atom>          
+  </And>
+ </body>
+ <head>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>u</Var>
+   <Ind>rdf:type</Ind>
+   <Var>x</Var>
+  </Atom>   
+ </head>
+</Implies>
+
+<!-- owl33c -->
+
+<Implies>
+ <body>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>owl:cardinality</Ind>
+    <Var>y</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>owl:onProperty</Ind>
+    <Var>p</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>u</Var>
+    <Ind>rdf:type</Ind>
+    <Var>x</Var>
+   </Atom>  
+  </And>
+ </body>
+ <head>
+  <Atom>
+   <Cterm>
+    <Ctor>swrlb:equal</Ctor>
+    <Cterm>
+     <Ctor>count</Ctor>
+     <Atom>
+      <Rel>statement</Rel>
+      <Var>u</Var>
+      <Var>p</Var>
+      <Var>v</Var>
+     </Atom>      
+    </Cterm>
+    <Var>y</Var>
+   </Cterm>       
+  </Atom>
+ </head>
+</Implies>
+
+</And>

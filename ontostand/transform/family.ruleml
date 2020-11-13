@@ -1,0 +1,1103 @@
+
+  <Atom>
+    <Rel>statement</Rel>
+    <Ind/>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Ontology</Ind>
+</Atom>
+  <Atom>
+    <Rel>statement</Rel>
+    <Ind>Son</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>Son</Ind>
+    <Ind>owl:equivalentClass</Ind>
+    <Ind>N65553</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65553</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65553</Ind>
+    <Ind>owl:intersectionOf</Ind>
+    <Ind>Child</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>Child</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65553</Ind>
+    <Ind>owl:intersectionOf</Ind>
+    <Ind>Man</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>Man</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom>
+  <Atom>
+    <Rel>statement</Rel>
+    <Ind>Person</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom>
+  <Atom>
+    <Rel>statement</Rel>
+    <Ind>Uncle</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>Uncle</Ind>
+    <Ind>rdfs:subClassOf</Ind>
+    <Ind>Relative</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>Relative</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>Uncle</Ind>
+    <Ind>rdfs:subClassOf</Ind>
+    <Ind>#Man</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#Man</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom>
+  <Atom>
+    <Rel>statement</Rel>
+    <Ind>Parent</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>Parent</Ind>
+    <Ind>rdfs:subClassOf</Ind>
+    <Ind>#Relative</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#Relative</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>Parent</Ind>
+    <Ind>rdfs:subClassOf</Ind>
+    <Ind>N65598</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65598</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Restriction</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65598</Ind>
+    <Ind>owl:onProperty</Ind>
+    <Ind>hasChild</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>hasChild</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:ObjectProperty</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65598</Ind>
+    <Ind>owl:minCardinality</Ind>
+    <Ind>1^^xsd:int</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>Parent</Ind>
+    <Ind>rdfs:subClassOf</Ind>
+    <Ind>#Person</Ind>
+</Atom>
+  <Atom>
+    <Rel>statement</Rel>
+    <Ind>Special</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>Special</Ind>
+    <Ind>rdfs:subClassOf</Ind>
+    <Ind>N65621</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65621</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Restriction</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65621</Ind>
+    <Ind>owl:allValuesFrom</Ind>
+    <Ind>Woman</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>Woman</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65621</Ind>
+    <Ind>owl:onProperty</Ind>
+    <Ind>#hasChild</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#hasChild</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:ObjectProperty</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>Special</Ind>
+    <Ind>rdfs:subClassOf</Ind>
+    <Ind>#Parent</Ind>
+</Atom>
+  <Atom>
+    <Rel>statement</Rel>
+    <Ind>Father</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>Father</Ind>
+    <Ind>owl:equivalentClass</Ind>
+    <Ind>N65646</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65646</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65646</Ind>
+    <Ind>owl:intersectionOf</Ind>
+    <Ind>#Man</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#Man</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65646</Ind>
+    <Ind>owl:intersectionOf</Ind>
+    <Ind>#Parent</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#Parent</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom>
+  <Atom>
+    <Rel>statement</Rel>
+    <Ind>#Relative</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#Relative</Ind>
+    <Ind>rdfs:subClassOf</Ind>
+    <Ind>#Person</Ind>
+</Atom>
+  <Atom>
+    <Rel>statement</Rel>
+    <Ind>#Child</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#Child</Ind>
+    <Ind>rdfs:subClassOf</Ind>
+    <Ind>#Person</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#Child</Ind>
+    <Ind>rdfs:subClassOf</Ind>
+    <Ind>N65676</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65676</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Restriction</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65676</Ind>
+    <Ind>owl:cardinality</Ind>
+    <Ind>1^^xsd:int</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65676</Ind>
+    <Ind>owl:onProperty</Ind>
+    <Ind>hasMother</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>hasMother</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:ObjectProperty</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#Child</Ind>
+    <Ind>rdfs:subClassOf</Ind>
+    <Ind>#Relative</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#Child</Ind>
+    <Ind>rdfs:subClassOf</Ind>
+    <Ind>N65695</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65695</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Restriction</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65695</Ind>
+    <Ind>owl:cardinality</Ind>
+    <Ind>1^^xsd:int</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65695</Ind>
+    <Ind>owl:onProperty</Ind>
+    <Ind>hasFather</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>hasFather</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:ObjectProperty</Ind>
+</Atom>
+  <Atom>
+    <Rel>statement</Rel>
+    <Ind>#Man</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#Man</Ind>
+    <Ind>owl:disjointWith</Ind>
+    <Ind>#Woman</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#Woman</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#Man</Ind>
+    <Ind>owl:equivalentClass</Ind>
+    <Ind>N65721</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65721</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65721</Ind>
+    <Ind>owl:intersectionOf</Ind>
+    <Ind>N65726</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65726</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Restriction</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65726</Ind>
+    <Ind>owl:onProperty</Ind>
+    <Ind>hasGender</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>hasGender</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:ObjectProperty</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65726</Ind>
+    <Ind>owl:hasValue</Ind>
+    <Ind>Male</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>Male</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>Gender</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65721</Ind>
+    <Ind>owl:intersectionOf</Ind>
+    <Ind>#Person</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#Person</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom>
+  <Atom>
+    <Rel>statement</Rel>
+    <Ind>Aunt</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>Aunt</Ind>
+    <Ind>rdfs:subClassOf</Ind>
+    <Ind>#Woman</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#Woman</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>Aunt</Ind>
+    <Ind>rdfs:subClassOf</Ind>
+    <Ind>#Relative</Ind>
+</Atom>
+  <Atom>
+    <Rel>statement</Rel>
+    <Ind>Nephew</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>Nephew</Ind>
+    <Ind>rdfs:subClassOf</Ind>
+    <Ind>#Relative</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>Nephew</Ind>
+    <Ind>rdfs:subClassOf</Ind>
+    <Ind>#Man</Ind>
+</Atom>
+  <Atom>
+    <Rel>statement</Rel>
+    <Ind>Sibling</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>Sibling</Ind>
+    <Ind>rdfs:subClassOf</Ind>
+    <Ind>#Person</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>Sibling</Ind>
+    <Ind>owl:equivalentClass</Ind>
+    <Ind>N65779</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65779</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65779</Ind>
+    <Ind>owl:unionOf</Ind>
+    <Ind>Brother</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>Brother</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65779</Ind>
+    <Ind>owl:unionOf</Ind>
+    <Ind>Sister</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>Sister</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>Sibling</Ind>
+    <Ind>rdfs:subClassOf</Ind>
+    <Ind>#Relative</Ind>
+</Atom>
+  <Atom>
+    <Rel>statement</Rel>
+    <Ind>Daughter</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>Daughter</Ind>
+    <Ind>owl:equivalentClass</Ind>
+    <Ind>N65802</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65802</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65802</Ind>
+    <Ind>owl:intersectionOf</Ind>
+    <Ind>#Child</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#Child</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65802</Ind>
+    <Ind>owl:intersectionOf</Ind>
+    <Ind>#Woman</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#Woman</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom>
+  <Atom>
+    <Rel>statement</Rel>
+    <Ind>Mother</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>Mother</Ind>
+    <Ind>owl:equivalentClass</Ind>
+    <Ind>N65822</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65822</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65822</Ind>
+    <Ind>owl:intersectionOf</Ind>
+    <Ind>#Parent</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#Parent</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65822</Ind>
+    <Ind>owl:intersectionOf</Ind>
+    <Ind>#Woman</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#Woman</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom>
+  <Atom>
+    <Rel>statement</Rel>
+    <Ind>Gender</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>Gender</Ind>
+    <Ind>owl:equivalentClass</Ind>
+    <Ind>N65842</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65842</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65842</Ind>
+    <Ind>owl:oneOf</Ind>
+    <Ind>#Male</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#Male</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>Gender</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65842</Ind>
+    <Ind>owl:oneOf</Ind>
+    <Ind>Female</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>Female</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>Gender</Ind>
+</Atom>
+  <Atom>
+    <Rel>statement</Rel>
+    <Ind>Niece</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>Niece</Ind>
+    <Ind>rdfs:subClassOf</Ind>
+    <Ind>#Woman</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#Woman</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>Niece</Ind>
+    <Ind>rdfs:subClassOf</Ind>
+    <Ind>#Relative</Ind>
+</Atom>
+  <Atom>
+    <Rel>statement</Rel>
+    <Ind>#Woman</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#Woman</Ind>
+    <Ind>owl:equivalentClass</Ind>
+    <Ind>N65875</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65875</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65875</Ind>
+    <Ind>owl:intersectionOf</Ind>
+    <Ind>N65880</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65880</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Restriction</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65880</Ind>
+    <Ind>owl:hasValue</Ind>
+    <Ind>#Female</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65880</Ind>
+    <Ind>owl:onProperty</Ind>
+    <Ind>#hasGender</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#hasGender</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:ObjectProperty</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65875</Ind>
+    <Ind>owl:intersectionOf</Ind>
+    <Ind>#Person</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#Person</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#Woman</Ind>
+    <Ind>owl:disjointWith</Ind>
+    <Ind>#Man</Ind>
+</Atom>
+  <Atom>
+    <Rel>statement</Rel>
+    <Ind>#Brother</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#Brother</Ind>
+    <Ind>rdfs:subClassOf</Ind>
+    <Ind>#Sibling</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#Brother</Ind>
+    <Ind>rdfs:subClassOf</Ind>
+    <Ind>N65910</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65910</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Restriction</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65910</Ind>
+    <Ind>owl:someValuesFrom</Ind>
+    <Ind>#Person</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65910</Ind>
+    <Ind>owl:onProperty</Ind>
+    <Ind>hasBrother</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>hasBrother</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:ObjectProperty</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#Brother</Ind>
+    <Ind>rdfs:subClassOf</Ind>
+    <Ind>#Man</Ind>
+</Atom>
+  <Atom>
+    <Rel>statement</Rel>
+    <Ind>#Sister</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#Sister</Ind>
+    <Ind>rdfs:subClassOf</Ind>
+    <Ind>#Sibling</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#Sister</Ind>
+    <Ind>rdfs:subClassOf</Ind>
+    <Ind>N65935</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65935</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Restriction</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65935</Ind>
+    <Ind>owl:someValuesFrom</Ind>
+    <Ind>#Person</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>N65935</Ind>
+    <Ind>owl:onProperty</Ind>
+    <Ind>hasSister</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>hasSister</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:ObjectProperty</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#Sister</Ind>
+    <Ind>rdfs:subClassOf</Ind>
+    <Ind>#Woman</Ind>
+</Atom>
+  <Atom>
+    <Rel>statement</Rel>
+    <Ind>#hasGender</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:ObjectProperty</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#hasGender</Ind>
+    <Ind>rdfs:range</Ind>
+    <Ind>#Gender</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#hasGender</Ind>
+    <Ind>rdfs:domain</Ind>
+    <Ind>#Person</Ind>
+</Atom>
+  <Atom>
+    <Rel>statement</Rel>
+    <Ind>#hasChild</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:ObjectProperty</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#hasChild</Ind>
+    <Ind>rdfs:range</Ind>
+    <Ind>#Child</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#hasChild</Ind>
+    <Ind>owl:inverseOf</Ind>
+    <Ind>hasParent</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>hasParent</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:ObjectProperty</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#hasChild</Ind>
+    <Ind>rdfs:domain</Ind>
+    <Ind>#Parent</Ind>
+</Atom>
+  <Atom>
+    <Rel>statement</Rel>
+    <Ind>hasUncle</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:ObjectProperty</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>hasUncle</Ind>
+    <Ind>rdfs:domain</Ind>
+    <Ind>#Person</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>hasUncle</Ind>
+    <Ind>rdfs:range</Ind>
+    <Ind>#Uncle</Ind>
+</Atom>
+  <Atom>
+    <Rel>statement</Rel>
+    <Ind>#hasMother</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:ObjectProperty</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#hasMother</Ind>
+    <Ind>owl:inverseOf</Ind>
+    <Ind>inverse_of_family_Slot_1</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>inverse_of_family_Slot_1</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:ObjectProperty</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#hasMother</Ind>
+    <Ind>rdfs:subPropertyOf</Ind>
+    <Ind>#hasParent</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#hasParent</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:ObjectProperty</Ind>
+</Atom>
+  <Atom>
+    <Rel>statement</Rel>
+    <Ind>inverse_of_family_Slot_0</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:ObjectProperty</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>inverse_of_family_Slot_0</Ind>
+    <Ind>owl:inverseOf</Ind>
+    <Ind>#hasFather</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#hasFather</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:ObjectProperty</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>inverse_of_family_Slot_0</Ind>
+    <Ind>rdfs:subPropertyOf</Ind>
+    <Ind>#hasChild</Ind>
+</Atom>
+  <Atom>
+    <Rel>statement</Rel>
+    <Ind>#hasSister</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:ObjectProperty</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#hasSister</Ind>
+    <Ind>rdfs:range</Ind>
+    <Ind>#Person</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#hasSister</Ind>
+    <Ind>rdfs:domain</Ind>
+    <Ind>#Person</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#hasSister</Ind>
+    <Ind>rdfs:subPropertyOf</Ind>
+    <Ind>hasSibling</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>hasSibling</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:SymmetricProperty</Ind>
+</Atom>
+  <Atom>
+    <Rel>statement</Rel>
+    <Ind>#hasFather</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:ObjectProperty</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#hasFather</Ind>
+    <Ind>rdfs:subPropertyOf</Ind>
+    <Ind>#hasParent</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#hasParent</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:ObjectProperty</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#hasFather</Ind>
+    <Ind>owl:inverseOf</Ind>
+    <Ind>#inverse_of_family_Slot_0</Ind>
+</Atom>
+  <Atom>
+    <Rel>statement</Rel>
+    <Ind>#hasParent</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:ObjectProperty</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#hasParent</Ind>
+    <Ind>rdfs:range</Ind>
+    <Ind>#Parent</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#hasParent</Ind>
+    <Ind>owl:inverseOf</Ind>
+    <Ind>#hasChild</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#hasParent</Ind>
+    <Ind>rdfs:domain</Ind>
+    <Ind>#Child</Ind>
+</Atom>
+  <Atom>
+    <Rel>statement</Rel>
+    <Ind>#hasBrother</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:ObjectProperty</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#hasBrother</Ind>
+    <Ind>rdfs:subPropertyOf</Ind>
+    <Ind>#hasSibling</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#hasSibling</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:SymmetricProperty</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#hasBrother</Ind>
+    <Ind>rdfs:domain</Ind>
+    <Ind>#Person</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#hasBrother</Ind>
+    <Ind>rdfs:range</Ind>
+    <Ind>#Person</Ind>
+</Atom>
+  <Atom>
+    <Rel>statement</Rel>
+    <Ind>hasAunt</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:ObjectProperty</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>hasAunt</Ind>
+    <Ind>rdfs:range</Ind>
+    <Ind>#Aunt</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>hasAunt</Ind>
+    <Ind>rdfs:domain</Ind>
+    <Ind>#Person</Ind>
+</Atom>
+  <Atom>
+    <Rel>statement</Rel>
+    <Ind>#inverse_of_family_Slot_1</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:ObjectProperty</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#inverse_of_family_Slot_1</Ind>
+    <Ind>owl:inverseOf</Ind>
+    <Ind>#hasMother</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#inverse_of_family_Slot_1</Ind>
+    <Ind>rdfs:subPropertyOf</Ind>
+    <Ind>#hasChild</Ind>
+</Atom>
+  <Atom>
+    <Rel>statement</Rel>
+    <Ind>oftenSay</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:DatatypeProperty</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>oftenSay</Ind>
+    <Ind>rdfs:range</Ind>
+    <Ind>xsd:string</Ind>
+</Atom>
+  <Atom>
+    <Rel>statement</Rel>
+    <Ind>ageOf</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:DatatypeProperty</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>ageOf</Ind>
+    <Ind>rdfs:range</Ind>
+    <Ind>xsd:int</Ind>
+</Atom>
+  <Atom>
+    <Rel>statement</Rel>
+    <Ind>isSpecial</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:DatatypeProperty</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>isSpecial</Ind>
+    <Ind>rdfs:range</Ind>
+    <Ind>xsd:boolean</Ind>
+</Atom>
+  <Atom>
+    <Rel>statement</Rel>
+    <Ind>#hasSibling</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:SymmetricProperty</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#hasSibling</Ind>
+    <Ind>rdfs:range</Ind>
+    <Ind>#Person</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#hasSibling</Ind>
+    <Ind>rdfs:domain</Ind>
+    <Ind>#Person</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#hasSibling</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:ObjectProperty</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>#hasSibling</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:TransitiveProperty</Ind>
+</Atom>
+  <Atom>
+    <Rel>statement</Rel>
+    <Ind>thp</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>Mother</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>thp</Ind>
+    <Ind>hasSister</Ind>
+    <Ind>tjp</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>tjp</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>Sister</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>tjp</Ind>
+    <Ind>hasSister</Ind>
+    <Ind>#thp</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>thp</Ind>
+    <Ind>hasChild</Ind>
+    <Ind>mj</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>mj</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>Daughter</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>mj</Ind>
+    <Ind>hasSister</Ind>
+    <Ind>lt</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>lt</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>Sister</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>lt</Ind>
+    <Ind>hasSister</Ind>
+    <Ind>#mj</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>mj</Ind>
+    <Ind>ageOf</Ind>
+    <Ind>24^^xsd:int</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>mj</Ind>
+    <Ind>hasParent</Ind>
+    <Ind>mdg</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>mdg</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>Father</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>mdg</Ind>
+    <Ind>hasChild</Ind>
+    <Ind>#mj</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>mdg</Ind>
+    <Ind>hasBrother</Ind>
+    <Ind>mdq</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>mdq</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>Brother</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>mdq</Ind>
+    <Ind>hasBrother</Ind>
+    <Ind>#mdg</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>mdg</Ind>
+    <Ind>hasSister</Ind>
+    <Ind>mym</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>mym</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>Sister</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>mj</Ind>
+    <Ind>hasParent</Ind>
+    <Ind>#thp</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>mj</Ind>
+    <Ind>hasBrother</Ind>
+    <Ind>tw</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>tw</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>Brother</Ind>
+</Atom>
+  <Atom>
+    <Rel>statement</Rel>
+    <Ind>ygmo</Ind>
+    <Ind>rdf:type</Ind>
+    <Ind>Special</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>ygmo</Ind>
+    <Ind>oftenSay</Ind>
+    <Ind>I love you^^xsd:string</Ind>
+</Atom><Atom>
+    <Rel>statement</Rel>
+    <Ind>ygmo</Ind>
+    <Ind>isSpecial</Ind>
+    <Ind>true^^xsd:boolean</Ind>
+</Atom>

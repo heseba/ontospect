@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Ontostand - Start Understanding Ontologies</title>
+
+    {% load static %}
+  <link REL="SHORTCUT ICON" HREF="{% static "img/favicon.ico" %}"/>
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'vendor/fontawesome-free/css/all.min.css' %}">
+
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="{% static 'css/coming-soon.css' %}">
+
+   <!-- jquery -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %} "></script>
+    <script type="text/javascript">
+        var extractorsUrl = "{% url "ontostand:extractors" %}";
+        var filelistUrl = "{% url "ontostand:getFileList" %}";
+        var verbalizeUrl = "{% url "ontostand:verbalize" %}";
+        var uploadUrl = "{% url "ontostand:upload" %}";
+        var cleanUrl = "{% url "ontostand:clean_temp_files" %}";
+    </script>
+    <script src="{% static 'js/ontostand.js' %} "></script>
+
+
+</head>
+
+<body>
+
+{#  <div class="overlay"></div>#}
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="{% static 'mp4/bg.mp4' %}" type="video/mp4">
+  </video>
+
+{#------------------Result Page----------------#}
+<div class="container-fluid content" id="result-area" style="display: none">
+    <div class="row">
+    <div class="header col-md-12">
+    <div align="left"><img src={% static 'img/logo_header.png' %} height="85" width="300"></div>
+    </div>
+    <div class="bar col-md-12"></div>
+    </div>
+    <div class="row">
+            {#list title#}
+            <div class="list-title col-md-3 text-white py-5 py-md-0">
+            <h5 class="list-group-item" id="sensor_title">Sensor<i class="fas fa-cog fa-spin float-right"></i></h5>
+            </div>
+            <div class="list-title col-md-3 text-white py-5 py-md-0" >
+            <h5 class="list-group-item" id="actuator_title">Actuator<i class="fas fa-cog fa-spin float-right"></i></h5>
+            </div>
+            <div class="list-title col-md-6 text-white py-5 py-md-0" >
+             <h5 class="list-group-item" id="rule_count">Logical Rule</h5>
+            </div>
+    </div>
+  <div class="row">
+    {#Sensor List#}
+    <div class="list-area col-md-3 text-white py-5 py-md-0 pre-scrollable loading-1" id="sensor_div">
+    <ul class="list-group" id="ssn_sensor_list" style="display: none">
+    <li class="list-group-item" id="ssn_sensor_count" style="text-align: center"></li>
+    </ul>
+    <ul class="list-group" id="sosa_sensor_list" style="display: none">
+    <li class="list-group-item" id="sosa_sensor_count" style="text-align: center"></li>
+    </ul>
+    <ul class="list-group" id="diy_sensor_list" style="display: none">
+    <li class="list-group-item" id="diy_sensor_count" style="text-align: center"></li>
+    </ul>
+    </div>
+    {#Actuator List#}
+    <div class="list-area col-md-3 text-white py-5 py-md-0 pre-scrollable loading-2" id="actuator_div">
+    <ul class="list-group" id="sosa_actuator_list" style="display: none">
+    <li class="list-group-item" id="sosa_actuator_count" style="text-align: center"></li>
+    </ul>
+    <ul class="list-group" id="diy_actuator_list" style="display: none">
+    <li class="list-group-item" id="diy_actuator_count" style="text-align: center"></li>
+    </ul>
+    </div>
+    {#Rule List#}
+    <div class="list-area col-md-6 text-white py-5 py-md-0 pre-scrollable loading-3" id="rule_div">
+    <ul class="list-group" id="rule">
+    </ul>
+    </div>
+</div>
+    <footer class="row">
+        <div class="footer col-md-12 text-white py-5 py-md-0">
+        <a href="javascript:" onclick="self.location=document.referrer;">BACK</a>
+        <span>Copyright © 2020 YICHEN WANG All rights reserved</span>
+        </div>
+    </footer>
+</div>
+
+{#   -----------------Index Page-------------------   #}
+
+  <div class="masthead" id="input_area" style="display:block">
+    <div class="masthead-bg" id="left_bg"></div>
+{#    <div class="container h-100">#}
+      <div class="row h-100">
+        <div class="col-12 my-auto">
+          <div class="masthead-content col-03 text-white py-5 py-md-0" id="inputbox">
+            <div id="input_area">
+                <div align="center"><img src={% static 'img/logo.png' %}></div>
+            <h1 class="mb-3" style="text-align: center">Ontostand</h1>
+            <p class="mb-5">An automatic Toolchain for identifying
+                <strong>Sensors, Actuators,</strong> and <strong>Logical Rules</strong> in IoT ontologies.</p>
+
+
+            <form class="input-group input-group-newsletter" method="post" enctype="multipart/form-data">
+                {% csrf_token  %}
+                <input type="url" id="onto_url" class="form-control" placeholder="Enter URL or choose a local ontology file.">
+                <div class="input-group-append">
+                    <button class="btn btn-secondary" id="btn_url" type="button">START</button>
+                </div>
+            </form>
+            <form  method="post" enctype="multipart/form-data">
+                <p id ="textField"></p>
+                {% csrf_token %}
+                <input type='button' class='btn btn-secondary' value='SELECT' onclick="upload_file.click()" />
+                <input type="file" name="filesource" id="upload_file" style="display: none" onchange="getFilePath()" />
+                <button class="btn btn-secondary" id="btn_upload" type="button">UPLOAD</button>
+            </form>
+            </div>
+          </div>
+        </div>
+{#      </div>#}
+    </div>
+  </div>
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static '/vendor/bootstrap/js/bootstrap.bundle.min.js' %} "></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{% static 'js/coming-soon.min.js' %} "></script>
+
+</body>
+
+</html>
+
+<script>
+function getFilePath() {
+  var path = document.getElementById("upload_file").value;
+  var name = path.substring(path.lastIndexOf('\\') + 1);
+  document.getElementById("textField").innerHTML = "You Selected: " + name;
+}
+</script>

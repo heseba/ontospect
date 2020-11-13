@@ -1,0 +1,1014 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE And SYSTEM "http://www.ruleml.org/fol/fol-monolith.dtd">
+<And innerclose="universal">
+
+<!-- rdfs5 -->
+
+<Implies>
+ <body>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>u</Var>
+    <Ind>rdfs:subPropertyOf</Ind>
+    <Var>v</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>v</Var>
+    <Ind>rdfs:subPropertyOf</Ind>
+    <Var>w</Var>
+   </Atom>   
+  </And>
+ </body>
+ <head>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>u</Var>
+   <Ind>rdfs:subPropertyOf</Ind>
+   <Var>w</Var>
+  </Atom>
+ </head> 
+</Implies> 
+
+<!-- rdfs11 -->
+
+<Implies>
+ <body>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>u</Var>
+    <Ind>rdfs:subClassOf</Ind>
+    <Var>v</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>v</Var>
+    <Ind>rdfs:subClassOf</Ind>
+    <Var>w</Var>
+   </Atom>   
+  </And>
+ </body>
+ <head>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>u</Var>
+   <Ind>rdfs:subClassOf</Ind>
+   <Var>w</Var>
+  </Atom>
+ </head> 
+</Implies> 
+
+<!-- rdfs8 -->
+
+<Implies>
+ <body>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>s</Var>
+   <Ind>rdf:type</Ind>
+   <Ind>rdfs:Class</Ind>
+  </Atom>
+ </body>
+ <head>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>s</Var>
+   <Ind>rdfs:subClassOf</Ind>
+   <Ind>rdfs:Resource</Ind>
+  </Atom>
+ </head>
+</Implies>
+
+<!-- rdfs13 -->
+
+<Implies>
+ <body>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>s</Var>
+   <Ind>rdf:type</Ind>
+   <Ind>rdfs:Datatype</Ind>
+  </Atom>
+ </body>
+ <head>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>s</Var>
+   <Ind>rdfs:subClassOf</Ind>
+   <Ind>rdfs:Literal</Ind>
+  </Atom>
+ </head>
+</Implies>
+
+<!-- owl3 -->
+
+<Implies>
+ <body>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>s</Var>
+   <Ind>rdf:type</Ind>
+   <Ind>owl:Class</Ind>
+  </Atom>
+ </body>
+ <head>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>s</Var>
+   <Ind>rdfs:subClassOf</Ind>
+   <Ind>owl:Thing</Ind>
+  </Atom>
+ </head>
+</Implies>
+
+<!-- owl4 is the same as rdfs13 -->
+
+<!-- owl5 -->
+
+<Implies>
+ <body>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>s</Var>
+   <Ind>rdf:type</Ind>
+   <Ind>owl:DataRange</Ind>
+  </Atom>
+ </body>
+ <head>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>s</Var>
+   <Ind>rdfs:subClassOf</Ind>
+   <Ind>rdfs:Literal</Ind>
+  </Atom>
+ </head>
+</Implies>
+
+
+<!-- owl6 -->
+
+<Implies>
+ <body>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>s</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:ObjectProperty</Ind>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>u</Var>
+    <Var>s</Var>
+    <Var>v</Var>
+   </Atom>   
+  </And>
+ </body>
+ <head>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>u</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Thing</Ind>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>v</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Thing</Ind>
+   </Atom>
+  </And>
+ </head>
+</Implies>
+
+<!-- owl7 -->
+
+<Implies>
+ <body>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>s</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:DatatypeProperty</Ind>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>u</Var>
+    <Var>s</Var>
+    <Var>v</Var>
+   </Atom>   
+  </And>
+ </body>
+ <head>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>u</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Thing</Ind>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>v</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>rdfs:Literal</Ind>
+   </Atom>
+  </And>
+ </head>
+</Implies>
+
+<!-- owl8 -->
+
+<Implies>
+ <body>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>s</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:AnnotationProperty</Ind>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>u</Var>
+    <Var>s</Var>
+    <Var>v</Var>
+   </Atom>   
+  </And>
+ </body>
+ <head>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>u</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>rdfs:Resource</Ind>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>v</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>rdfs:Resource</Ind>
+   </Atom>
+  </And>
+ </head>
+</Implies>
+
+<!-- owl9 -->
+
+<Implies>
+ <body>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>s</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:OntologyProperty</Ind>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>u</Var>
+    <Var>s</Var>
+    <Var>v</Var>
+   </Atom>   
+  </And>
+ </body>
+ <head>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>u</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Ontology</Ind>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>v</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Ontology</Ind>
+   </Atom>
+  </And>
+ </head>
+</Implies>
+
+
+<!-- owl10a -->
+
+<Implies>
+ <body>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>s</Var>
+   <Ind>rdf:type</Ind>
+   <Ind>owl:FunctionalProperty</Ind>
+  </Atom>
+ </body>
+ <head>
+  <Or>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>s</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:ObjectProperty</Ind>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>s</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:DatatypeProperty</Ind>
+   </Atom>
+  </Or>
+ </head>
+</Implies>
+
+<!-- owl11a -->
+
+<Implies>
+ <body>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>s</Var>
+   <Ind>rdf:type</Ind>
+   <Ind>owl:InverseFunctionalProperty</Ind>
+  </Atom>
+ </body>
+ <head>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>s</Var>
+   <Ind>rdf:type</Ind>
+   <Ind>owl:ObjectProperty</Ind>
+  </Atom>
+ </head>
+</Implies>
+
+<!-- owl12a -->
+
+<Implies>
+ <body>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>s</Var>
+   <Ind>rdf:type</Ind>
+   <Ind>owl:SymmetricProperty</Ind>
+  </Atom>
+ </body>
+ <head>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>s</Var>
+   <Ind>rdf:type</Ind>
+   <Ind>owl:ObjectProperty</Ind>
+  </Atom>
+ </head>
+</Implies>
+
+<!-- owl13a -->
+
+<Implies>
+ <body>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>s</Var>
+   <Ind>rdf:type</Ind>
+   <Ind>owl:TransitiveProperty</Ind>
+  </Atom>
+ </body>
+ <head>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>s</Var>
+   <Ind>rdf:type</Ind>
+   <Ind>owl:ObjectProperty</Ind>
+  </Atom>
+ </head>
+</Implies>
+
+<!-- owl18a -->
+
+<Implies>
+ <body>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>u</Var>
+   <Ind>owl:equivalentClass</Ind>
+   <Var>v</Var>
+  </Atom>
+ </body>
+ <head>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>u</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>v</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+   </Atom>
+  </And>
+ </head>
+</Implies>
+
+
+<!-- owl19a -->
+
+<Implies>
+ <body>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>u</Var>
+   <Ind>owl:disjointWith</Ind>
+   <Var>v</Var>
+  </Atom>
+ </body>
+ <head>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>u</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>v</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+   </Atom>
+  </And>
+ </head>
+</Implies>
+
+<!-- owl20a -->
+
+<Implies>
+ <body>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>u</Var>
+   <Ind>owl:equivalentProperty</Ind>
+   <Var>v</Var>
+  </Atom>
+ </body>
+ <head>
+  <Or>
+   <And>
+    <Atom>
+     <Rel>statement</Rel>
+     <Var>u</Var>
+     <Ind>rdf:type</Ind>
+     <Ind>owl:ObjectProperty</Ind>
+    </Atom>
+    <Atom>
+     <Rel>statement</Rel>
+     <Var>v</Var>
+     <Ind>rdf:type</Ind>
+     <Ind>owl:ObjectProperty</Ind>
+    </Atom>
+   </And>
+   <And>
+    <Atom>
+     <Rel>statement</Rel>
+     <Var>u</Var>
+     <Ind>rdf:type</Ind>
+     <Ind>owl:DatatypeProperty</Ind>
+    </Atom>
+    <Atom>
+     <Rel>statement</Rel>
+     <Var>v</Var>
+     <Ind>rdf:type</Ind>
+     <Ind>owl:DatatypeProperty</Ind>
+    </Atom>
+   </And>   
+  </Or>
+ </head>
+</Implies>
+
+<!-- owl21a -->
+
+<Implies>
+ <body>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>u</Var>
+   <Ind>owl:inverseOf</Ind>
+   <Var>v</Var>
+  </Atom>
+ </body>
+ <head>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>u</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:ObjectProperty</Ind>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>v</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:ObjectProperty</Ind>
+   </Atom>
+  </And>
+ </head>
+</Implies>
+
+<!-- owl24a -->
+
+<Implies>
+ <body>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>u</Var>
+   <Ind>owl:complementOf</Ind>
+   <Var>v</Var>
+  </Atom>
+ </body>
+ <head>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>u</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>v</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+   </Atom>
+  </And>
+ </head>
+</Implies>
+
+<!-- owl25a -->
+
+<Implies>
+ <body>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>u</Var>
+   <Ind>owl:unionOf</Ind>
+   <Var>v</Var>
+  </Atom>
+ </body>
+ <head>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>u</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>v</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+   </Atom>
+  </And>
+ </head>
+</Implies>
+
+<!-- owl26a -->
+
+<Implies>
+ <body>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>u</Var>
+   <Ind>owl:intersectionOf</Ind>
+   <Var>v</Var>
+  </Atom>
+ </body>
+ <head>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>u</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>v</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Class</Ind>
+   </Atom>
+  </And>
+ </head>
+</Implies>
+
+<!-- owl27a -->
+
+<Implies>
+ <body>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>u</Var>
+   <Ind>owl:oneOf</Ind>
+   <Var>v</Var>
+  </Atom>
+ </body>
+ <head>
+  <Or>
+   <And>
+    <Atom>
+     <Rel>statement</Rel>
+     <Var>u</Var>
+     <Ind>rdf:type</Ind>
+     <Ind>owl:Class</Ind>
+    </Atom>
+    <Atom>
+     <Rel>statement</Rel>
+     <Var>v</Var>
+     <Ind>rdf:type</Ind>
+     <Ind>owl:Thing</Ind>
+    </Atom>    
+   </And>
+   <And>
+    <Atom>
+     <Rel>statement</Rel>
+     <Var>u</Var>
+     <Ind>rdf:type</Ind>
+     <Ind>rdfs:Datatype</Ind>
+    </Atom>
+    <Atom>
+     <Rel>statement</Rel>
+     <Var>v</Var>
+     <Ind>rdf:type</Ind>
+     <Ind>rdfs:Literal</Ind>
+    </Atom>    
+   </And>
+  </Or>
+ </head>
+</Implies>
+
+
+<!-- owl28a -->
+
+<Implies>
+ <body>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>owl:allValuesFrom</Ind>
+    <Var>y</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>owl:onProperty</Ind>
+    <Var>p</Var>
+   </Atom>
+  </And>
+ </body>
+ <head>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Restriction</Ind>
+   </Atom>   
+   <Or>
+    <And>
+     <Atom>
+      <Rel>statement</Rel>
+      <Var>p</Var>
+      <Ind>rdf:type</Ind>
+      <Ind>owl:ObjectProperty</Ind>
+     </Atom>
+     <Atom>
+      <Rel>statement</Rel>
+      <Var>y</Var>
+      <Ind>rdf:type</Ind>
+      <Ind>owl:Class</Ind>
+     </Atom>    
+    </And>
+    <And>
+     <Atom>
+      <Rel>statement</Rel>
+      <Var>p</Var>
+      <Ind>rdf:type</Ind>
+      <Ind>owl:DatatypeProperty</Ind>
+     </Atom>
+     <Atom>
+      <Rel>statement</Rel>
+      <Var>y</Var>
+      <Ind>rdf:type</Ind>
+      <Ind>rdfs:Datatype</Ind>
+     </Atom>    
+    </And>    
+   </Or>
+  </And>
+ </head>
+</Implies>
+
+<!-- owl29a -->
+
+<Implies>
+ <body>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>owl:someValuesFrom</Ind>
+    <Var>y</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>owl:onProperty</Ind>
+    <Var>p</Var>
+   </Atom>
+  </And>
+ </body>
+ <head>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Restriction</Ind>
+   </Atom>   
+   <Or>
+    <And>
+     <Atom>
+      <Rel>statement</Rel>
+      <Var>p</Var>
+      <Ind>rdf:type</Ind>
+      <Ind>owl:ObjectProperty</Ind>
+     </Atom>
+     <Atom>
+      <Rel>statement</Rel>
+      <Var>y</Var>
+      <Ind>rdf:type</Ind>
+      <Ind>owl:Class</Ind>
+     </Atom>    
+    </And>
+    <And>
+     <Atom>
+      <Rel>statement</Rel>
+      <Var>p</Var>
+      <Ind>rdf:type</Ind>
+      <Ind>owl:DatatypeProperty</Ind>
+     </Atom>
+     <Atom>
+      <Rel>statement</Rel>
+      <Var>y</Var>
+      <Ind>rdf:type</Ind>
+      <Ind>rdfs:Datatype</Ind>
+     </Atom>    
+    </And>    
+   </Or>
+  </And>
+ </head>
+</Implies>
+
+<!-- owl30a -->
+
+<Implies>
+ <body>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>owl:hasValue</Ind>
+    <Var>y</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>owl:onProperty</Ind>
+    <Var>p</Var>
+   </Atom>
+  </And>
+ </body>
+ <head>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Restriction</Ind>
+   </Atom>   
+   <Or>
+    <And>
+     <Atom>
+      <Rel>statement</Rel>
+      <Var>p</Var>
+      <Ind>rdf:type</Ind>
+      <Ind>owl:ObjectProperty</Ind>
+     </Atom>
+     <Atom>
+      <Rel>statement</Rel>
+      <Var>y</Var>
+      <Ind>rdf:type</Ind>
+      <Ind>owl:Thing</Ind>
+     </Atom>    
+    </And>
+    <And>
+     <Atom>
+      <Rel>statement</Rel>
+      <Var>p</Var>
+      <Ind>rdf:type</Ind>
+      <Ind>owl:DatatypeProperty</Ind>
+     </Atom>
+     <Atom>
+      <Rel>statement</Rel>
+      <Var>y</Var>
+      <Ind>rdf:type</Ind>
+      <Ind>rdfs:Literal</Ind>
+     </Atom>    
+    </And>    
+   </Or>
+  </And>
+ </head>
+</Implies>
+
+<!-- owl31a -->
+
+<Implies>
+ <body>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>owl:minCardinality</Ind>
+    <Var>y</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>owl:onProperty</Ind>
+    <Var>p</Var>
+   </Atom>
+  </And>
+ </body>
+ <head>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Restriction</Ind>
+   </Atom> 
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>y</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>rdfs:Literal</Ind>
+   </Atom>   
+   <Atom>
+    <Cterm>
+     <Ctor>swrlb:greaterThanOrEqual</Ctor>
+     <Var>y</Var>
+     <Ind>0</Ind> 
+    </Cterm>       
+   </Atom>    
+   <Or>
+    <Atom>
+     <Rel>statement</Rel>
+     <Var>p</Var>
+     <Ind>rdf:type</Ind>
+     <Ind>owl:ObjectProperty</Ind>
+    </Atom>
+    <Atom>
+     <Rel>statement</Rel>
+     <Var>p</Var>
+     <Ind>rdf:type</Ind>
+     <Ind>owl:DatatypeProperty</Ind>
+    </Atom>    
+   </Or>
+  </And>
+ </head>
+</Implies>
+
+<!-- owl32a -->
+
+<Implies>
+ <body>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>owl:maxCardinality</Ind>
+    <Var>y</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>owl:onProperty</Ind>
+    <Var>p</Var>
+   </Atom>
+  </And>
+ </body>
+ <head>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Restriction</Ind>
+   </Atom> 
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>y</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>rdfs:Literal</Ind>
+   </Atom>    
+   <Atom>
+    <Cterm>
+     <Ctor>swrlb:greaterThanOrEqual</Ctor>
+     <Var>y</Var>
+     <Ind>0</Ind> 
+    </Cterm>       
+   </Atom>    
+   <Or>
+    <Atom>
+     <Rel>statement</Rel>
+     <Var>p</Var>
+     <Ind>rdf:type</Ind>
+     <Ind>owl:ObjectProperty</Ind>
+    </Atom>
+    <Atom>
+     <Rel>statement</Rel>
+     <Var>p</Var>
+     <Ind>rdf:type</Ind>
+     <Ind>owl:DatatypeProperty</Ind>
+    </Atom>    
+   </Or>
+  </And>
+ </head>
+</Implies>
+
+<!-- owl33a -->
+
+<Implies>
+ <body>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>owl:cardinality</Ind>
+    <Var>y</Var>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>owl:onProperty</Ind>
+    <Var>p</Var>
+   </Atom>
+  </And>
+ </body>
+ <head>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>x</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Restriction</Ind>
+   </Atom> 
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>y</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>rdfs:Literal</Ind>
+   </Atom>    
+   <Atom>
+    <Cterm>
+     <Ctor>swrlb:greaterThanOrEqual</Ctor>
+     <Var>y</Var>
+     <Ind>0</Ind> 
+    </Cterm>       
+   </Atom>    
+   <Or>
+    <Atom>
+     <Rel>statement</Rel>
+     <Var>p</Var>
+     <Ind>rdf:type</Ind>
+     <Ind>owl:ObjectProperty</Ind>
+    </Atom>
+    <Atom>
+     <Rel>statement</Rel>
+     <Var>p</Var>
+     <Ind>rdf:type</Ind>
+     <Ind>owl:DatatypeProperty</Ind>
+    </Atom>    
+   </Or>
+  </And>
+ </head>
+</Implies>
+
+</And>

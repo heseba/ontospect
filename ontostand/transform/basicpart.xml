@@ -1,0 +1,1086 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE And SYSTEM "http://www.ruleml.org/fol/fol-monolith.dtd">
+<And innerclose="universal">
+
+<!-- rdf1 -->
+
+<Implies>
+ <body>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>s</Var>
+   <Var>p</Var>
+   <Var>o</Var>
+  </Atom>
+ </body>
+ <head>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>p</Var>
+   <Ind>rdf:type</Ind>
+   <Ind>rdf:Property</Ind>
+  </Atom>
+ </head>
+</Implies>
+
+<!-- rdfs4a, rdfs4b, rdf0 -->
+
+<Implies>
+ <body>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>s</Var>
+   <Var>p</Var>
+   <Var>o</Var>
+  </Atom>
+ </body>
+ <head>
+  <And>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>s</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>rdfs:Resource</Ind>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>o</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>rdfs:Resource</Ind>
+   </Atom>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>p</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>rdfs:Resource</Ind>
+   </Atom>      
+  </And>
+ </head>
+</Implies> 
+
+<!-- rdfs0 -->
+
+<Implies>
+ <body>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>s</Var>
+   <Ind>rdf:type</Ind>
+   <Var>o</Var>
+  </Atom>
+ </body>
+ <head>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>o</Var>
+   <Ind>rdf:type</Ind>
+   <Ind>rdfs:Class</Ind>
+  </Atom>
+ </head>
+</Implies>
+
+<!-- rdfs6 -->
+
+<Implies>
+ <body>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>s</Var>
+   <Ind>rdf:type</Ind>
+   <Ind>rdf:Property</Ind>
+  </Atom>
+ </body>
+ <head>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>s</Var>
+   <Ind>rdfs:subPropertyOf</Ind>
+   <Var>s</Var>
+  </Atom>
+ </head>
+</Implies>
+
+<!-- rdfs10 -->
+
+<Implies>
+ <body>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>s</Var>
+   <Ind>rdf:type</Ind>
+   <Ind>rdfs:Class</Ind>
+  </Atom>
+ </body>
+ <head>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>s</Var>
+   <Ind>rdfs:subClassOf</Ind>
+   <Var>s</Var>
+  </Atom>
+ </head>
+</Implies>
+
+<!-- OWL integrity constraint -->
+
+<!-- owl1 -->
+
+ <Exists>
+  <Var>s</Var>
+  <Atom>
+   <Rel>statement</Rel>
+   <Var>s</Var>
+   <Ind>rdf:type</Ind>
+   <Ind>owl:Thing</Ind>
+  </Atom>
+ </Exists>
+
+<!-- owl2 -->
+
+ <Neg>
+  <Exists>
+   <Var>s</Var>
+   <Atom>
+    <Rel>statement</Rel>
+    <Var>s</Var>
+    <Ind>rdf:type</Ind>
+    <Ind>owl:Nothing</Ind>
+   </Atom>
+  </Exists>
+ </Neg>
+
+
+
+<!-- OWL axiomatic triples -->
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:Class</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdfs:Class</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:Class</Ind>
+   <Ind>rdfs:subClassOf</Ind>
+   <Ind>rdfs:Class</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:Restriction</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdfs:Class</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:Restriction</Ind>
+   <Ind>rdfs:subClassOf</Ind>
+   <Ind>owl:Class</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:Thing</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>owl:Class</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:Thing</Ind>
+   <Ind>rdfs:subClassOf</Ind>
+   <Ind>rdfs:Resource</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:Nothing</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>owl:Class</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdfs:Datatype</Ind>
+   <Ind>rdfs:subClassOf</Ind>
+   <Ind>rdfs:Class</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdfs:Literal</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdfs:Datatype</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdfs:Literal</Ind>
+   <Ind>rdfs:subClassOf</Ind>
+   <Ind>rdfs:Resource</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:ObjectProperty</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdfs:Class</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:ObjectProperty</Ind>
+   <Ind>rdfs:subClassOf</Ind>
+   <Ind>rdf:Property</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:DatatypeProperty</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdfs:Class</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:DatatypeProperty</Ind>
+   <Ind>rdfs:subClassOf</Ind>
+   <Ind>rdf:Property</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:AnnotationProperty</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdfs:Class</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:AnnotationProperty</Ind>
+   <Ind>rdfs:subClassOf</Ind>
+   <Ind>rdf:Property</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:OntologyProperty</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdfs:Class</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:OntologyProperty</Ind>
+   <Ind>rdfs:subClassOf</Ind>
+   <Ind>rdf:Property</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:Ontology</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdfs:Class</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:AllDifferent</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdfs:Class</Ind>
+ </Atom>
+
+
+
+<!-- RDF axiomatic triples -->
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdf:type</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdf:Property</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdf:subject</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdf:Property</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdf:predicate</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdf:Property</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdf:object</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdf:Property</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdf:first</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdf:Property</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdf:rest</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdf:Property</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdf:value</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdf:Property</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdf:nil</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdf:List</Ind>
+ </Atom>
+
+
+<!-- RDFS axiomatic triples -->
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdf:type</Ind>
+   <Ind>rdfs:domain</Ind>
+   <Ind>rdfs:Resource</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdfs:domain</Ind>
+   <Ind>rdfs:domain</Ind>
+   <Ind>rdf:Property</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdfs:range</Ind>
+   <Ind>rdfs:domain</Ind>
+   <Ind>rdf:Property</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdfs:subPropertyOf</Ind>
+   <Ind>rdfs:domain</Ind>
+   <Ind>rdf:Property</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdfs:subClassOf</Ind>
+   <Ind>rdfs:domain</Ind>
+   <Ind>rdfs:Class</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdf:subject</Ind>
+   <Ind>rdfs:domain</Ind>
+   <Ind>rdf:Statement</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdf:predicate</Ind>
+   <Ind>rdfs:domain</Ind>
+   <Ind>rdf:Statement</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdf:object</Ind>
+   <Ind>rdfs:domain</Ind>
+   <Ind>rdf:Statement</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdfs:memeber</Ind>
+   <Ind>rdfs:domain</Ind>
+   <Ind>rdfs:Resource</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdf:first</Ind>
+   <Ind>rdfs:domain</Ind>
+   <Ind>rdf:List</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdf:rest</Ind>
+   <Ind>rdfs:domain</Ind>
+   <Ind>rdf:List</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdfs:seeAlso</Ind>
+   <Ind>rdfs:domain</Ind>
+   <Ind>rdfs:Resource</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdfs:isDefinedBy</Ind>
+   <Ind>rdfs:domain</Ind>
+   <Ind>rdfs:Resource</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdfs:comment</Ind>
+   <Ind>rdfs:domain</Ind>
+   <Ind>rdfs:Resource</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdfs:label</Ind>
+   <Ind>rdfs:domain</Ind>
+   <Ind>rdfs:Resource</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdf:value</Ind>
+   <Ind>rdfs:domain</Ind>
+   <Ind>rdfs:Resource</Ind>
+ </Atom>
+
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdf:type</Ind>
+   <Ind>rdfs:range</Ind>
+   <Ind>rdfs:Class</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdfs:domain</Ind>
+   <Ind>rdfs:range</Ind>
+   <Ind>rdfs:Class</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdfs:range</Ind>
+   <Ind>rdfs:range</Ind>
+   <Ind>rdfs:Class</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdfs:subPropertyOf</Ind>
+   <Ind>rdfs:range</Ind>
+   <Ind>rdf:Property</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdfs:subClassOf</Ind>
+   <Ind>rdfs:range</Ind>
+   <Ind>rdfs:Class</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdf:subject</Ind>
+   <Ind>rdfs:range</Ind>
+   <Ind>rdfs:Resource</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdf:predicate</Ind>
+   <Ind>rdfs:range</Ind>
+   <Ind>rdfs:Resource</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdf:object</Ind>
+   <Ind>rdfs:range</Ind>
+   <Ind>rdfs:Resource</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdfs:memeber</Ind>
+   <Ind>rdfs:range</Ind>
+   <Ind>rdfs:Resource</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdf:first</Ind>
+   <Ind>rdfs:range</Ind>
+   <Ind>rdfs:Resource</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdf:rest</Ind>
+   <Ind>rdfs:range</Ind>
+   <Ind>rdfs:Resource</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdfs:seeAlso</Ind>
+   <Ind>rdfs:range</Ind>
+   <Ind>rdfs:Resource</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdfs:isDefinedBy</Ind>
+   <Ind>rdfs:range</Ind>
+   <Ind>rdfs:Resource</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdfs:comment</Ind>
+   <Ind>rdfs:range</Ind>
+   <Ind>rdfs:Literal</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdfs:label</Ind>
+   <Ind>rdfs:range</Ind>
+   <Ind>rdfs:Literal</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdf:value</Ind>
+   <Ind>rdfs:range</Ind>
+   <Ind>rdfs:Resource</Ind>
+ </Atom>
+
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdf:Alt</Ind>
+   <Ind>rdfs:subClassOf</Ind>
+   <Ind>rdfs:Container</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdf:Bag</Ind>
+   <Ind>rdfs:subClassOf</Ind>
+   <Ind>rdfs:Container</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdf:Seq</Ind>
+   <Ind>rdfs:subClassOf</Ind>
+   <Ind>rdfs:Container</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdfs:ContainerMembershipProperty</Ind>
+   <Ind>rdfs:subClassOf</Ind>
+   <Ind>rdf:Property</Ind>
+ </Atom>
+
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdfs:isDefinedBy</Ind>
+   <Ind>rdfs:subPropertyOf</Ind>
+   <Ind>rdfs:seeAlso</Ind>
+ </Atom>
+
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdf:XMLLiteral</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdfs:Datatype</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdf:XMLLiteral</Ind>
+   <Ind>rdfs:subClassOf</Ind>
+   <Ind>rdfs:Literal</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdfs:Datatype</Ind>
+   <Ind>rdfs:subClassOf</Ind>
+   <Ind>rdfs:Class</Ind>
+ </Atom>
+
+
+<!-- OWL built-in syntactic classes and properties -->
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:FunctionalProperty</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdfs:Class</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:InverseFunctionalProperty</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdfs:Class</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:SymmetricProperty</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdfs:Class</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:TransitiveProperty</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdfs:Class</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:DeprecatedClass</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdfs:Class</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:DeprecatedProperty</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdfs:Class</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:equivalentClass</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdf:Property</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:disjointWith</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdf:Property</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:equivalentProperty</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdf:Property</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:inverseOf</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdf:Property</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:sameAs</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdf:Property</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:differentFrom</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdf:Property</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:complementOf</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdf:Property</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:unionOf</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdf:Property</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:intersectionOf</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdf:Property</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:oneOf</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdf:Property</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:allValuesFrom</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdf:Property</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:onProperty</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdf:Property</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:someValuesFrom</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdf:Property</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:hasValue</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdf:Property</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:minCardinality</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdf:Property</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:maxCardinality</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdf:Property</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:cardinality</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdf:Property</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:distinctMembers</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>rdf:Property</Ind>
+ </Atom>
+
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:versionInfo</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>owl:AnnotationProperty</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdfs:label</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>owl:AnnotationProperty</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdfs:comment</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>owl:AnnotationProperty</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdfs:comment</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>owl:AnnotationProperty</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdfs:seeAlso</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>owl:AnnotationProperty</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>rdfs:isDefinedBy</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>owl:AnnotationProperty</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:imports</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>owl:OntologyProperty</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:priorVersion</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>owl:OntologyProperty</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:backwardCompatibleWith</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>owl:OntologyProperty</Ind>
+ </Atom>
+
+
+
+ <Atom>
+   <Rel>statement</Rel>
+   <Ind>owl:incompatibleWith</Ind>
+   <Ind>rdf:type</Ind>
+   <Ind>owl:OntologyProperty</Ind>
+ </Atom>
+
+
+</And>
