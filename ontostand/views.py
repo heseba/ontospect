@@ -2,15 +2,15 @@ from django.shortcuts import render
 from django.shortcuts import HttpResponse
 import os
 import ontospy
-from ontostand.extractor.sensor_extractor import SensorExtractor
-from ontostand.extractor.actuator_extractor import ActuatorExtractor
-from ontostand.extractor.rule_extractor import RuleExtractor
-from ontostand.transform.transform import Transfromer
+from ontospect.extractor.sensor_extractor import SensorExtractor
+from ontospect.extractor.actuator_extractor import ActuatorExtractor
+from ontospect.extractor.rule_extractor import RuleExtractor
+from ontospect.transform.transform import Transfromer
 import json
 from antlr4 import *
-from ontostand.ruleml_parser.RULEMLParser import RULEMLParser
-from ontostand.ruleml_parser.RULEMLLexer import RULEMLLexer
-from ontostand.verbalizer.ruleml_verbalizer import RULEMLVerbalizer
+from ontospect.ruleml_parser.RULEMLParser import RULEMLParser
+from ontospect.ruleml_parser.RULEMLLexer import RULEMLLexer
+from ontospect.verbalizer.ruleml_verbalizer import RULEMLVerbalizer
 import shutil
 
 
@@ -43,13 +43,13 @@ def extractors(request):
 def getFileList(request):
     uniqueid = request.POST.get('uid')
     Transfromer().transform(uniqueid)
-    path = r"ontostand/data/transformed/" + uniqueid + "/"
+    path = r"ontospect/data/transformed/" + uniqueid + "/"
     files = os.listdir(path)
     return HttpResponse(json.dumps(files), content_type='application/json')
 
 def verbalize(request):
     uniqueid = request.POST.get('uid')
-    path = r"ontostand/data/transformed/" + uniqueid + "/"
+    path = r"ontospect/data/transformed/" + uniqueid + "/"
     file = request.POST.get('filename')
     input = FileStream(path + file, encoding='utf-8')
     lexer = RULEMLLexer(input)
@@ -68,9 +68,9 @@ def upload(request):
         uniqueid = request.POST.get('uid')
         print("upload name：", file_obj.name)
         print("upload size：", file_obj.size)
-        # shutil.rmtree(r'ontostand/data/upload/' + uniqueid + '/', ignore_errors=True)
-        os.mkdir(r'ontostand/data/upload/'+ uniqueid + '/')
-        filepath = os.path.join(r"ontostand/data/upload/" + uniqueid + "/", file_obj.name)
+        # shutil.rmtree(r'ontospect/data/upload/' + uniqueid + '/', ignore_errors=True)
+        os.mkdir(r'ontospect/data/upload/'+ uniqueid + '/')
+        filepath = os.path.join(r"ontospect/data/upload/" + uniqueid + "/", file_obj.name)
         f = open(filepath, 'wb')
         for line in file_obj.chunks():
             f.write(line)
@@ -79,13 +79,13 @@ def upload(request):
 
 def clean_temp_files(request):
     uniqueid = request.POST.get('uid')
-    uploadpath = r'ontostand/data/upload/' + uniqueid
+    uploadpath = r'ontospect/data/upload/' + uniqueid
     if os.path.exists(uploadpath):
         shutil.rmtree(uploadpath)
-    preprocesspath = r'ontostand/data/preprocessed/' + uniqueid
+    preprocesspath = r'ontospect/data/preprocessed/' + uniqueid
     if os.path.exists(preprocesspath):
         shutil.rmtree(preprocesspath)
-    transformpath = r'ontostand/data/transformed/' + uniqueid
+    transformpath = r'ontospect/data/transformed/' + uniqueid
     if os.path.exists(transformpath):
         shutil.rmtree(transformpath)
     return HttpResponse("Done")

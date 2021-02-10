@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Ontostand - Start Understanding Ontologies</title>
+  <title>ontospect - Start Understanding Ontologies</title>
 
     {% load static %}
   <link REL="SHORTCUT ICON" HREF="{% static "img/favicon.ico" %}"/>
@@ -25,13 +25,13 @@
    <!-- jquery -->
     <script src="{% static 'vendor/jquery/jquery.min.js' %} "></script>
     <script type="text/javascript">
-        var extractorsUrl = "{% url "ontostand:extractors" %}";
-        var filelistUrl = "{% url "ontostand:getFileList" %}";
-        var verbalizeUrl = "{% url "ontostand:verbalize" %}";
-        var uploadUrl = "{% url "ontostand:upload" %}";
-        var cleanUrl = "{% url "ontostand:clean_temp_files" %}";
+        var extractorsUrl = "{% url "ontospect:extractors" %}";
+        var filelistUrl = "{% url "ontospect:getFileList" %}";
+        var verbalizeUrl = "{% url "ontospect:verbalize" %}";
+        var uploadUrl = "{% url "ontospect:upload" %}";
+        var cleanUrl = "{% url "ontospect:clean_temp_files" %}";
     </script>
-    <script src="{% static 'js/ontostand.js' %} "></script>
+    <script src="{% static 'js/ontospect.js' %} "></script>
 
 
 </head>
@@ -109,7 +109,7 @@
           <div class="masthead-content col-03 text-white py-5 py-md-0" id="inputbox">
             <div id="input_area">
                 <div align="center"><img src={% static 'img/logo.png' %}></div>
-            <h1 class="mb-3" style="text-align: center">Ontostand</h1>
+            <h1 class="mb-3" style="text-align: center">ontospect</h1>
             <p class="mb-5">An automatic Toolchain for identifying
                 <strong>Sensors, Actuators,</strong> and <strong>Logical Rules</strong> in IoT ontologies.</p>
 

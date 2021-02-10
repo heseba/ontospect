@@ -29,7 +29,7 @@ class RuleExtractor:
         for i in range(len(op_list)):
             if isinstance(op_list[i].rdf_source(), str) \
                     and re.search(restriction, op_list[i].rdf_source()) is not None:
-                file = open(r'ontostand/data/preprocessed/property_' + str(i) + '.xml', 'w', encoding='utf-8')
+                file = open(r'ontospect/data/preprocessed/property_' + str(i) + '.xml', 'w', encoding='utf-8')
                 # print(op_list[i].rdf_source())
                 file.write(op_list[i].rdf_source(format='pretty-xml'))
                 op_restriction.append(op_list[i].rdf_source())
@@ -38,8 +38,8 @@ class RuleExtractor:
         return op_restriction
 
     def start(self,uniqueid):
-        # shutil.rmtree(r'ontostand/data/preprocessed')
-        os.mkdir(r'ontostand/data/preprocessed/' + uniqueid + '/')
-        path = r'ontostand/data/preprocessed/' + uniqueid + '/'
+        # shutil.rmtree(r'ontospect/data/preprocessed')
+        os.mkdir(r'ontospect/data/preprocessed/' + uniqueid + '/')
+        path = r'ontospect/data/preprocessed/' + uniqueid + '/'
         self.get_all_classes(path)
         # self.get_all_object_properties()

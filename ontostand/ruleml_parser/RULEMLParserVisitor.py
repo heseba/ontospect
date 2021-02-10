@@ -1,4 +1,4 @@
-# Generated from D:/OneDrive/ontoproject/ontostand/ruleml_parser/ruleml_grammar\RULEMLParser.g4 by ANTLR 4.8
+# Generated from D:/OneDrive/ontoproject/ontospect/ruleml_parser/ruleml_grammar\RULEMLParser.g4 by ANTLR 4.8
 from antlr4 import *
 if __name__ is not None and "." in __name__:
     from .RULEMLParser import RULEMLParser

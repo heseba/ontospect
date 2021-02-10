@@ -8,14 +8,14 @@ class Transfromer:
         print('Transform start....')
 
     def makeDirectory(self):
-        shutil.rmtree(r'ontostand/data/transformed', ignore_errors=True)
-        os.mkdir(r'ontostand/data/transformed')
+        shutil.rmtree(r'ontospect/data/transformed', ignore_errors=True)
+        os.mkdir(r'ontospect/data/transformed')
 
     def transform(self, uniqueid):
         # self.makeDirectory()
-        os.mkdir(r'ontostand/data/transformed/' + uniqueid)
+        os.mkdir(r'ontospect/data/transformed/' + uniqueid)
         if not jpype.isJVMStarted():
             startJVM(getDefaultJVMPath(), "-ea",
-                    "-Djava.class.path=%s" % (os.getcwd() + "/ontostand/transform/TransformToRuleML.jar"), convertStrings=False)
+                    "-Djava.class.path=%s" % (os.getcwd() + "/ontospect/transform/TransformToRuleML.jar"), convertStrings=False)
         JDClass = JClass("TransformToRuleML")
         JDClass.main([uniqueid])

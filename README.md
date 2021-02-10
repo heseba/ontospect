@@ -6,7 +6,7 @@ using Django framework.
 Python 3.7.3 + Win10 64bit + Firefox + JDK1.8.0_261
 
 
-## To Run this projcet locally:
+## To Run this project locally:
 * Install the python environment with correct version
 
 * Install a JRE version higher than 1.8.0_261 (JAVA8)
@@ -18,7 +18,7 @@ Python 3.7.3 + Win10 64bit + Firefox + JDK1.8.0_261
 ```pip instal requirements.txt```
 * Run Django's local server:
 ```python manage.py runserver```
-* Open the address printed in terminal, by default: ```http://127.0.0.1:8000/ontostand/```
+* Open the address printed in terminal, by default: ```http://127.0.0.1:8000/ontospect/```
 
 ## Recommended Browser:
 This project can now running on `Firefox`, `Chrome`, `Microsoft Edge`, and `Safari`.

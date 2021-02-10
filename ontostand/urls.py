@@ -3,7 +3,7 @@ from . import views
 from django.urls import path
 
 
-app_name = 'ontostand'
+app_name = 'ontospect'
 urlpatterns = [
     # ex: /mysample/
     url(r'^$', views.index),

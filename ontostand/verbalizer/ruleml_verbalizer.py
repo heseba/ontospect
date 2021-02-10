@@ -1,5 +1,5 @@
-from ontostand.ruleml_parser.RULEMLParser import RULEMLParser
-from ontostand.ruleml_parser.RULEMLParserVisitor import RULEMLParserVisitor
+from ontospect.ruleml_parser.RULEMLParser import RULEMLParser
+from ontospect.ruleml_parser.RULEMLParserVisitor import RULEMLParserVisitor
 import re
 import wordninja
 

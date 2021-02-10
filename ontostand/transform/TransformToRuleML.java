@@ -34,7 +34,7 @@ public class TransformToRuleML {
 	public static void main(String[] args)  throws TransformerException, TransformerConfigurationException,
     FileNotFoundException, IOException
 	{
-        String path = "ontostand/data/preprocessed/" + args[0] + "/";
+        String path = "ontospect/data/preprocessed/" + args[0] + "/";
         File file = new File(path);   
         File[] array = file.listFiles();
         for(int i=0;i<array.length;i++)
@@ -42,9 +42,9 @@ public class TransformToRuleML {
             if(array[i].isFile())//file
             {   
             String fileName = array[i].getName().replaceAll("[.][^.]+$", "");
-            String xmlFileName = "ontostand/data/preprocessed/" + args[0] + "/" +fileName+".xml";
-            String xslFileName = "ontostand/transform/OWL2RuleML.xsl";
-            String outOFxslFileName = "ontostand/data/transformed/" + args[0] + "/" +fileName+".ruleml";
+            String xmlFileName = "ontospect/data/preprocessed/" + args[0] + "/" +fileName+".xml";
+            String xslFileName = "ontospect/transform/OWL2RuleML.xsl";
+            String outOFxslFileName = "ontospect/data/transformed/" + args[0] + "/" +fileName+".ruleml";
         
             // long startTime = System.currentTimeMillis();
             // System.out.println("start: " + startTime);

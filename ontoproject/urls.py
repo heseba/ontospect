@@ -16,11 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.conf.urls import include, url
 from django.urls import path
-from ontostand import views
+from ontospect import views
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
     # point the root URLconf at the mysample.urls module
-    url(r'^ontostand/', include('ontostand.urls')),
+    url(r'^ontospect/', include('ontospect.urls')),
     url(r'^admin/', admin.site.urls),
 ]

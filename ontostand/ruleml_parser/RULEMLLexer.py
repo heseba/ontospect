@@ -1,4 +1,4 @@
-# Generated from D:/OneDrive/ontoproject/ontostand/ruleml_parser/ruleml_grammar\RULEMLLexer.g4 by ANTLR 4.8
+# Generated from D:/OneDrive/ontoproject/ontospect/ruleml_parser/ruleml_grammar\RULEMLLexer.g4 by ANTLR 4.8
 from antlr4 import *
 from io import StringIO
 from typing.io import TextIO
